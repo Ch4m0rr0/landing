@@ -306,7 +306,6 @@
     width: 100%;
     max-width: 400px;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(80, 237, 153, 0.3); /* Sombra verde */
   }
   
   .about-container:hover .about-image img {
