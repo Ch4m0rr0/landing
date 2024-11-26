@@ -184,7 +184,6 @@
     background-color: #000; /* Fondo negro */
     border-radius: 10px;
     margin-top: 2rem;
-    box-shadow: 0 5px 15px rgba(80, 237, 153, 0.2); /* Sombra verde */
   }
   
   .section-title {
@@ -264,7 +263,6 @@
     padding: 4rem 1rem;
     border-radius: 10px;
     margin-top: 3rem;
-    box-shadow: 0 5px 15px rgba(80, 237, 153, 0.2); /* Sombra verde */
   }
   
   .about-container {
@@ -346,5 +344,103 @@
     }
   }
   
-  
+  /* Sección Destacada de Solutions */
+.solutions-highlight-section {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 1.5rem;
+}
+
+.solutions-highlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solutions-highlight-image {
+  flex: 1;
+  order: -1; /* Mueve la imagen al principio */
+}
+
+.solutions-highlight-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.solutions-highlight-content {
+  flex: 1;
+  text-align: left;
+}
+
+.solutions-highlight-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.solutions-highlight-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.solutions-highlight {
+  color: #80ed99;
+}
+
+.solutions-features-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.solutions-features-list li {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.solutions-features-list li::before {
+  content: "✔";
+  color: #80ed99;
+  font-size: 1.5rem;
+}
+
+.solutions-download-btn {
+  padding: 1rem 2rem;
+  background-color: #268391;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.solutions-download-btn:hover {
+  background-color: #80ed99;
+  transform: scale(1.1);
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+  .solutions-highlight-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .solutions-highlight-image {
+    order: 0; /* Resetea el orden para pantallas pequeñas */
+  }
+}
+
   
